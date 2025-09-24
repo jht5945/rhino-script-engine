@@ -30,7 +30,7 @@ import org.mozilla.javascript.*;
 import java.lang.reflect.Member;
 import java.lang.reflect.Modifier;
 
-import static sun.security.util.SecurityConstants.GET_CLASSLOADER_PERMISSION;
+import static de.christophkraemer.rhino.util.SecurityConstants.GET_CLASSLOADER_PERMISSION;
 
 /**
  * This wrap factory is used for security reasons. JSR 223 script

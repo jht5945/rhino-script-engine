@@ -25,6 +25,7 @@
 
 package de.christophkraemer.rhino.javascript;
 
+import de.christophkraemer.rhino.util.GetPropertyAction;
 import de.christophkraemer.rhino.util.InterfaceImplementor;
 import org.mozilla.javascript.*;
 
@@ -199,7 +200,7 @@ import java.util.Map;
     private static int getLanguageVersion() {
         int version;
         String tmp = AccessController.doPrivileged(
-                new sun.security.action.GetPropertyAction(RHINO_JS_VERSION));
+                new GetPropertyAction(RHINO_JS_VERSION));
         if (tmp != null) {
             version = Integer.parseInt((String) tmp);
         } else {
