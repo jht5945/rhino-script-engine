@@ -1,0 +1,17 @@
+{
+    "java": "1.8",
+    "builder": {
+        "name": "maven",
+        "version": "3.8.4"
+    },
+    "repo": {
+        "gid": "me.hatter",
+        "aid": "rhino-script-engine",
+        "jar": "rhino-script-engine-1.1.2.jar",
+        "src": "rhino-script-engine-1.1.2-sources.jar",
+        "dependencies": [
+            "org.mozilla:rhino:1.7R5"
+        ]
+    }
+}
+
